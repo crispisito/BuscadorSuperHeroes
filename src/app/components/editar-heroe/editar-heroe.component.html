@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <div class="return">
+        <button mat-stroked-button color="secondary" [routerLink]="['/lista']">
+            <mat-icon>chevron_left</mat-icon> Volver
+        </button>
+    </div>
+
+    <h1 class="third-title">Edita información de ...</h1>
+
+    <section class="form">
+        <form novalidate class="form-container" [formGroup]="heroForm" (ngSubmit)="getDataForm()">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input matInput value="{{superHeroe.name}}" formControlName="name">
+            </mat-form-field>
+
+            <span class="validation" *ngIf="validate">El campo no puede quedarse vacio</span>
+
+            <button type="submit" mat-flat-button color="primary">Editar información</button>
+        </form>
+
+
+    </section>
+
+</div>

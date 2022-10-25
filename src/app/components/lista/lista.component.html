@@ -1,0 +1,44 @@
+<div class="wrapper">
+
+    <section class="filters">
+        <div class="input-container">
+            <mat-form-field appearance="legacy">
+                <mat-label>Busca por nombre</mat-label>
+                <input matInput [(ngModel)]="nombreHeroe" placeholder="Thor, Hulk...">
+            </mat-form-field>
+            <button mat-flat-button color="primary" (click)="buscarHeroe()">Buscar</button>
+        </div>
+        <button mat-flat-button color="secondary" [routerLink]="['/nuevo-heroe']">
+            <mat-icon>add</mat-icon>
+        </button>
+    </section>
+
+    <section class=" pagination">
+        <mat-paginator [length]="superHeroesList.length" [pageSize]="pageSize" (page)="cambiarPagina($event)"
+            aria-label="Select page">
+        </mat-paginator>
+    </section>
+
+    <section class="list">
+        <mat-list>
+            <mat-list-item *ngFor="let super of superHeroesList | slice:desde:hasta" id="{{super.id}}">
+                <div class="list-title">
+                    {{super.name}}
+                </div>
+                <div class="button-group">
+                    <button mat-button color="secondary" [routerLink]="['/editar', super.id]">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-button color="secondary" (click)="openDialog(super)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+            </mat-list-item>
+        </mat-list>
+
+        <mat-progress-spinner class="example-margin" color="primary" mode="indeterminate" value="60" diameter="60"
+            *ngIf="charger">
+        </mat-progress-spinner>
+
+    </section>
+</div>

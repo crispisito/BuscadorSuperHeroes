@@ -1,0 +1,129 @@
+@import '../../../scss/variables/sizes';
+@import '../../../scss/variables/colors';
+
+.ng-star-inserted {
+    width: 100%;
+}
+
+/*Filtros*/
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(15);
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        max-width: rem(300);
+        gap: rem(15);
+
+        .mat-form-field {
+            width: 70%;
+        }
+
+        .mat-raised-button,
+        .mat-flat-button {
+            width: 30%;
+            margin-bottom: rem(10);
+            border-radius: rem(2);
+        }
+    }
+
+    >button {
+        width: auto;
+        min-width: auto;
+        margin-top: rem(-9);
+        font-size: rem(32);
+        border-radius: rem(2);
+    }
+}
+
+.mat-list-item {
+    margin-bottom: rem(6);
+}
+
+.mat-list-item-content {
+    justify-content: space-between;
+    background: $secondary;
+    border-radius: rem(2);
+}
+
+.list-title {
+    font-size: rem(18);
+    font-weight: 500;
+    color: $complementary-1;
+}
+
+.button-group {
+    display: flex;
+
+    .mat-button {
+        padding: 0;
+        min-width: rem(36);
+
+        &:last-of-type {
+            margin-left: rem(10);
+
+            .mat-icon {
+                color: $complementary-1;
+            }
+        }
+
+        &:hover {
+            .mat-icon {
+                filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .45));
+            }
+        }
+    }
+
+    .mat-button-wrapper {
+        display: block;
+    }
+
+    .mat-icon {
+        color: $primary;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .25));
+    }
+}
+
+.mat-paginator {
+    background: none;
+    color: $secondary;
+}
+
+.mat-icon-button.mat-button-disabled.mat-button-disabled svg {
+    opacity: .5;
+}
+
+.pagination .mat-paginator-container {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.mat-paginator-page-size {
+    width: auto;
+
+    .ng-star-inserted {
+        width: auto;
+    }
+}
+
+.list {
+    .mat-progress-spinner {
+        margin: rem(26) auto;
+    }
+}
+
+
+.list-load {
+    width: 100%;
+
+    .mat-list-item {
+        display: block;
+        width: 100%;
+        height: rem(53);
+        background: $complementary-3;
+    }
+}

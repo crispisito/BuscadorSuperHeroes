@@ -1,0 +1,35 @@
+@use '../variables/colors' as c;
+
+.mat-input-element {
+    caret-color: c.$primary;
+    color: c.$primary !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label,
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: c.$secondary;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline,
+.mat-form-field.mat-focused .mat-form-field-ripple {
+    background: c.$secondary;
+}
+
+.mat-input-element::placeholder {
+    color: c.$secondary;
+    font-weight: 300;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background-color: c.$secondary;
+}
+
+.mat-form-field-ripple {
+    background-color: c.$primary;
+}
+
+.form-container .validation {
+    display: block;
+    margin-bottom: rem(20);
+    color: c.$primary;
+}

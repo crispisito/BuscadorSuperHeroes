@@ -1,0 +1,28 @@
+@import '../functions/rem';
+
+$wrapper: rem(1440);
+
+$tablet-break: rem(768);
+$laptop-break: rem(1024);
+$desktop-break: rem(1268);
+
+/* Fonts */
+$h1-mobil-size: rem(36);
+$h1-desktop-size: rem(42);
+$h1-mobil-line-height: rem(39);
+$h1-desktop-line-height: rem(45);
+
+$h2-mobil-size: rem(31);
+$h2-desktop-size: rem(37);
+$h2-mobil-line-height: rem(34);
+$h2-desktop-line-height: rem(40);
+
+$h3-mobil-size: rem(27);
+$h3-desktop-size: rem(33);
+$h3-mobil-line-height: rem(30);
+$h3-desktop-line-height: rem(36);
+
+$h4-mobil-size: rem(23);
+$h4-desktop-size: rem(29);
+$h4-mobil-line-height: rem(26);
+$h4-desktop-line-height: rem(32);

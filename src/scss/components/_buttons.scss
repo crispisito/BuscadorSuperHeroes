@@ -1,0 +1,148 @@
+@use '../variables/colors' as c;
+
+.mat-flat-button {
+    &.mat-primary {
+        background: c.$primary;
+        transition: all .2s;
+
+        .mat-button-wrapper {
+            color: c.$secondary;
+        }
+
+        .mat-icon {
+            color: c.$secondary;
+        }
+
+        &:hover {
+            background: c.$secondary;
+
+            .mat-button-wrapper {
+                color: c.$primary;
+            }
+
+            .mat-icon {
+                color: c.$primary;
+            }
+        }
+    }
+
+    &.mat-secondary {
+        background: c.$secondary;
+        transition: all .2s;
+
+        .mat-button-wrapper {
+            color: c.$primary;
+        }
+
+        .mat-icon {
+            color: c.$primary;
+        }
+
+        &:hover {
+            background: c.$primary;
+
+            .mat-button-wrapper {
+                color: c.$secondary;
+            }
+
+            .mat-icon {
+                color: c.$secondary;
+            }
+        }
+    }
+
+    &.mat-third {
+        background: c.$complementary-1;
+        transition: all .2s;
+
+        .mat-button-wrapper {
+            color: c.$secondary;
+        }
+
+        .mat-icon {
+            color: c.$secondary;
+        }
+
+        &:hover {
+            background: c.$primary;
+
+            .mat-button-wrapper {
+                color: c.$secondary;
+            }
+
+            .mat-icon {
+                color: c.$secondary;
+            }
+        }
+    }
+}
+
+.mat-stroked-button {
+    &.mat-primary {
+        border-color: c.$primary;
+        transition: all .2s;
+
+        .mat-button-wrapper {
+            color: c.$secondary;
+        }
+
+        .mat-icon {
+            color: c.$secondary;
+        }
+
+        &:hover {
+            border-color: c.$secondary;
+
+            .mat-button-wrapper {
+                color: c.$primary;
+            }
+
+            .mat-icon {
+                color: c.$primary;
+            }
+        }
+    }
+
+    &.mat-secondary {
+        border-color: c.$secondary;
+        transition: all .2s;
+
+        .mat-button-wrapper {
+            color: c.$secondary;
+        }
+
+        .mat-icon {
+            color: c.$secondary;
+        }
+
+        &:hover {
+            border-color: c.$primary;
+
+            .mat-button-wrapper {
+                color: c.$primary;
+            }
+
+            .mat-icon {
+                color: c.$primary;
+            }
+        }
+    }
+}
+
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+    background: c.$primary;
+}
+
+.mat-button.mat-primary,
+.mat-icon-button.mat-primary,
+.mat-stroked-button.mat-primary {
+    color: c.$primary;
+}
+
+.mat-button.mat-secondary,
+.mat-icon-button.mat-secondary,
+.mat-stroked-button.mat-secondary {
+    color: c.$complementary-1;
+}

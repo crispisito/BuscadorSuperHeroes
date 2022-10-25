@@ -1,0 +1,11 @@
+@use '../variables/colors' as c;
+
+.mat-snack-bar-container {
+    background: c.$success;
+    font-weight: 700;
+
+    .mat-simple-snack-bar-content {
+        color: c.$complementary-1;
+
+    }
+}

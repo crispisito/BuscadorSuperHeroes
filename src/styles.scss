@@ -1,0 +1,20 @@
+/* FUNCIONES */
+@import 'scss/functions/rem';
+
+/* MIXINS */
+@import 'scss/mixins/breakpoints';
+
+/* GENERALS */
+@import 'scss/base/reset';
+@import 'scss/base/layout';
+
+/* COMPONENTS */
+@import 'scss/components/titles';
+@import 'scss/components/buttons';
+@import 'scss/components/snack-bar';
+@import 'scss/components/spinner';
+@import 'scss/components/inputs';
+@import 'scss/components/dialog';
+@import 'scss/components/return';
+
+@import 'app/components/lista/lista.component.scss';

@@ -1,0 +1,19 @@
+@use '../variables/sizes' as s;
+
+@mixin tablet {
+    @media only screen and (min-width: s.$tablet-break) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media only screen and (min-width: s.$laptop-break) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: s.$desktop-break) {
+        @content
+    }
+}

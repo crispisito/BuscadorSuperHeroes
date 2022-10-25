@@ -1,0 +1,6 @@
+@use '../variables/colors' as c;
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: c.$secondary
+}

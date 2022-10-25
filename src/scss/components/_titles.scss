@@ -1,0 +1,50 @@
+@use '../variables/sizes' as s;
+
+h1,
+.title {
+    font-size: s.$h1-mobil-size;
+    line-height: s.$h1-mobil-line-height;
+    font-weight: 700;
+}
+
+h2,
+.secondary-title {
+    font-size: s.$h2-mobil-size;
+    line-height: s.$h2-mobil-line-height;
+    font-weight: 500;
+}
+
+h3,
+.third-title {
+    font-size: s.$h3-mobil-size;
+    line-height: s.$h3-mobil-line-height;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: s.$h4-mobil-size;
+    line-height: s.$h4-mobil-line-height;
+    font-weight: 500;
+}
+
+@include laptop {
+    h1 {
+        font-size: s.$h1-desktop-size;
+        line-height: s.$h1-desktop-line-height;
+    }
+
+    h2 {
+        font-size: s.$h2-desktop-size;
+        line-height: s.$h2-desktop-line-height;
+    }
+
+    h3 {
+        font-size: s.$h3-desktop-size;
+        line-height: s.$h3-desktop-line-height;
+    }
+
+    h4 {
+        font-size: s.$h4-desktop-size;
+        line-height: s.$h4-desktop-line-height;
+    }
+}
